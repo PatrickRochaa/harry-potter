@@ -1,0 +1,91 @@
+@charset "UTF8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1.2rem;   
+}
+ 
+:root{
+    --cor-body: #030328;
+    --cor-titulo: #D9C83F;
+}
+
+@font-face {
+    font-family:"Harry Potter";
+    src:url("../fonte/HARRP___.eot?") format("eot"),
+    url("../fonte/HARRP___.woff") format("woff"),
+    url("../fonte/HARRP___.ttf") format("truetype"),
+    url("../fonte/HARRP___.svg#HarryPotter") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+body, html{
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--cor-body);
+}
+img{
+    width: 100%;
+}
+
+main{
+    
+    padding:10px;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to bottom, rgba(6, 32, 58, 0.021), #030328), url(../imagens/castelo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    box-shadow: 1px 8px 20px #030328;
+}
+
+.logo{
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.logo img{
+    width: 300px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+section,aside{
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+    color: white;
+    line-height: 150%;
+}
+
+
+aside figcaption,h2{
+    text-align: center;
+    margin-bottom: 20px; 
+    font-family:"Harry Potter";
+    font-weight: bolder; 
+    color: var(--cor-titulo)  
+}
+
+h2{
+    font-size: 2rem;
+}
+aside img{
+    margin-bottom: 20px;
+}
+
